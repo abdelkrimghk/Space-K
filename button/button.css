@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#menu {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 50px;
+    color: #f0f0f0;
+}
+
+.logo {
+    font-size: 80px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    color: #f0f0f0;
+    text-shadow: 0 0 35px #1e9bff;
+    text-transform: uppercase;
+    transition: 250ms;
+}
+
+.logo:hover {
+    text-shadow: 0 0 35px #ffffff69;
+    color: lightcoral;
+    letter-spacing: 0.1em;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    width: 95%;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 20px;
+
+}
+
+ul li .log {
+    color: #fff;
+    z-index: 10;
+}
+
+.inp {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+
+}
+
+.inpu {
+    position: relative;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    background: #27282c;
+    border: 2px solid;
+    border-color: rgb(0, 204, 255);
+    transition: 250ms ease;
+    padding-left: 10px;
+}
+
+.inpu:hover {
+    border-color: rgb(0, 204, 255);
+
+}
+
+
+
+
+.inpu:focus {
+    border-color: rgb(0, 204, 255);
+
+}
+
+
+.inpu:focus~.mail {
+    top: -13px;
+    left: 20px;
+    font-size: 13px;
+}
+
+.mail {
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    background-color: #27282c;
+    transition: 250ms ease;
+    border-radius: 10px;
+    border: 1px solid #27282c;
+}
+
+
+
+
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    top: 40%;
+    left: 70%;
+    border: 2px solid #ffffff69;
+    padding: 40px;
+    transition: 250ms;
+}
+
+.container:hover {
+    box-shadow: 0 0 35px #1e9bff;
+    padding: 45px;
+}
+
+
+
+
+.log {
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    transition: 250ms;
+    padding: 10px 30px;
+}
+
+.log:hover {
+    letter-spacing: 0.25em;
+    background-color: var(--clr);
+    color: #1e9bff;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+.log:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #27282c;
+}
+
+.log span {
+    position: relative;
+    z-index: 10;
+
+}
+
+.log .htp {
+    position: absolute;
+    inset: 0;
+    display: block;
+
+}
+
+
+.log .htp::before {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    transform: translateX(-50%);
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    transition: 250ms;
+}
+
+.log:hover .htp::before {
+    width: 20px;
+    left: 20%;
+
+}
+
+.log .htp::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    transform: translateX(-50%);
+    transition: 250ms;
+}
+
+.log:hover .htp::after {
+    width: 20px;
+    left: 80%;
+
+}
+
+.drog {
+    font-size: 25px;
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: 250ms;
+
+}
+
+.drog:hover {
+    letter-spacing: 0.1em;
+    color: #1e9bff;
+    text-shadow: 0 0 35px #ffffff69;
+}
+
+footer {
+    position: absolute;
+    top: 900px;
+    left: 30px;
+    padding: 30px;
+
+}
+
+footer .support {
+    color: lightcoral;
+    font-weight: bold;
+    position: absolute;
+    left: 91%;
+    top: 55px;
+
+}
+
+.media {
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+    width: 100%;
+
+}
+
+footer #fb {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+footer #insta {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+footer #tweet {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+footer .Follow {
+    position: absolute;
+    top: 10px;
+
+}
+
+.menulist {
+    display: none;
+    transition: 250ms;
+    width: 250px;
+
+    height: 250px;
+
+}
+
+.menulist li {
+    padding: 20px;
+    border: 2px solid #ffffff69;
+    text-align: center;
+    background-color: #444;
+    transition: 250ms;
+}
+
+
+
+
+.show {
+    display: block;
+    color: #f0f0f0;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    transition: 250ms;
+
+}
+
+.med {
+    color: #444;
+
+}

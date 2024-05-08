@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>welcome to Kspace</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <h1 class="logo">space.k</h1>
+        <ul>
+            <li><a href="#" style="--clr:#219c73" class="log"><span>Home</span></a></li>
+            <li><a href="#" style="--clr:blueviolet;" class="log"><span>Shop</span> </a></li>
+            <li><a href="#" style="--clr:coral;" class="log"><span>Offers</span></a></li>
+            <li><a href="#" style="--clr:gold;" class="log"><span>About</span></a></li>
+            <li><a href="#" style="--clr:#ffffff69;" class="log"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <a href="#" style="--clr:#1e9bff" class="log"><span><i class="fa-solid fa-user"></i> Login</span><i
+                class="htp"></i></a>
+        <a href="#" style="--clr:#ff1867" class="log"><span><i class="fa-solid fa-user-plus"></i> SignUp</span><i
+                class="htp"></i></a>
+        <a href="#" style="--clr:#6eff3e" class="log"><span><i class="fa-regular fa-circle-question"></i> Guest</span><i
+                class="htp"></i></a>
+    </div>
+
+    <div class="inp">
+        <input type="email" class="inpu">
+        <p class="mail">Email</p>
+        <br>
+        <br>
+        <br>
+        <a href="#" style="--clr:silver;" class="log"><span>Submit</span></a>
+    </div>
+
+
+    <div class="menuicon">
+        <i class="fa-sharp fa-solid fa-bars" id="menu" onclick="togglemenu()"></i>
+    </div>
+
+    <ul class="menulist">
+        <li><a href="#" class="drog">hompage</a> </li>
+        <li><a href="#" class="drog">VIP</a> </li>
+        <li><a href="#" class="drog">REPORT</a> </li>
+        <li><a href="#" class="drog">Jobs</a></li>
+    </ul>
+
+
+</body>
+
+<footer>
+    <ol>
+        <li>Official Website of &copy; FREEALG</li>
+        <LI>If you have any issues Contact <p class="support">support</p>
+        </LI>
+
+
+        <div class="media">
+
+            <a href="#" class="med"> <i class="fa-brands fa-facebook" id="fb"></i></a>
+            <a href="#" class="med"><i class="fa-brands fa-instagram" id="insta"></i></a>
+            <a href="#" class="med"><i class="fa-brands fa-twitter" id="tweet"></i></a>
+
+        </div>
+
+
+    </ol>
+</footer>
+
+<script>
+    const menuicon = document.querySelector('.menuicon');
+    const menulist = document.querySelector('.menulist');
+
+    menuicon.addEventListener("click", () => {
+        menulist.classList.toggle("show");
+    });
+</script>
+
+</html>
